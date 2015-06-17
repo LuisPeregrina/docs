@@ -390,6 +390,10 @@ levels deep associations, the data array should be as follow::
     If successful, the foreign key of the main model will be stored in
     the related models' id field, i.e. ``$this->RelatedModel->id``.
 
+.. note::
+
+    Take into consideration it saves the parent object before the children objects.
+
 .. warning::
 
     Be careful when checking saveAssociated calls with atomic option set to
